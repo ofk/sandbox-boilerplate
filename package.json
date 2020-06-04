@@ -5,6 +5,7 @@
   "author": "ofk <ofkjpn+github@gmail.com>",
   "license": "Public domain",
   "scripts": {
+    "start": "parcel serve index.html",
     "typecheck": "tsc --noEmit",
     "format:others": "prettier --write '**/*.{less,graphql,gql,html,json,md,markdown,mdown,mkdn,mdx,vue,yaml,yml}'",
     "format:styles": "stylelint --aei --fix '**/*.{css,scss}'",
