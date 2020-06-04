@@ -4,6 +4,12 @@
   "private": true,
   "author": "ofk <ofkjpn+github@gmail.com>",
   "license": "Public domain",
+  "scripts": {
+    "format:others": "prettier --write '**/*.{less,graphql,gql,html,json,md,markdown,mdown,mkdn,mdx,vue,yaml,yml}'",
+    "format:styles": "stylelint --aei --fix '**/*.{css,scss}'",
+    "format:scripts": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "format": "run-p format:*"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
